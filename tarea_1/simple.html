@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Fijo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            flex: 1;
+            padding: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Layout Estatico (Static/Fixed)</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Concepto</h2>
+            <p>Los diseños estáticos tienen una gran longitud fija independiente de la resolución, eran muchos comunes no pasados ​​y hoy felizmente eles quase não existen mais. El contenedor o el cuerpo están formateados para no moverse en su longitud (es decir, el nombre estático).</p>
+
+            <p>La desventaja de este tipo de diseño es que al visualizar el sitio en resoluciones menores se exibirá una barra de rolagem horizontal y será necesario rolar una barra para ver el contenido completo conforme a la imagen siguiente:</p>
+        </div>
+        <div class="container">
+            <h2>Otros Layout</h2>
+            <ul>
+                <li><a href="#">Layout Estatico</a></li>
+                <li><a href="liquido.html">Layout Líquido</a></li>
+                <li><a href="responsivo.html">Layout Responsivo</a></li>
+                <li><a href="adaptativo.html">Layout Adaptativo</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mi Página Moderna</p>
+        </div>
+    </footer>
+</body>
+</html>

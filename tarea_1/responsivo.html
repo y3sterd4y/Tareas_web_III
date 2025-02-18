@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            padding: 1em;
+            height: calc(100vh - 300px);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container > div {
+            flex: 1 1 200px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        @media (max-width: 600px) {
+            nav, main, .container > div {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsivo Layout</h1>
+    </header>
+    <nav>
+        <p>Menu de navegacion</p>
+    </nav>
+    <main>
+        <div class="container">
+            <div><p>El diseño Responsivo es el mejor de todos los escenarios (según mi opinión), porque integra dos mejores modelos en uno que es fluido y adaptativo, esta forma una troca de puntos de interrupción más suave devido ao encaixe do conteúdo nos contenedores (fluído) antes de alterar el diseño no (adaptativo) conforme a la imagen siguiente:</p></div>
+            <div><p>Apesar de existir una regra predefinida dos Breakpoints o conteúdo siempre está "vivo" se adaptando aos contenedores deixando assim um sentimiento de sitio inteligente y personalizado en cada píxel de la tela.</p></div>
+            <div>
+                <div class="container">
+                    <h2>Otros Layout</h2>
+                    <ul>
+                        <li><a href="simple.html">Layout Estatico</a></li>
+                        <li><a href="liquido.html">Layout Líquido</a></li>
+                        <li><a href="#">Layout Responsivo</a></li>
+                        <li><a href="adaptativo.html">Layout Adaptativo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptative Modern Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1em;
+        }
+        .card {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 1em;
+            padding: 1em;
+            width: calc(33% - 2em);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 2em);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 2em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adaptativo</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>tarjeta 1</h2>
+            <p>Imagine que tiene muchas resoluciones (puntos de interrupción) y cada una de las páginas de su diseño tendrá que encaixar na largura que su tela está reduciendo o aumentando, então cada página tendrá x adaptaciones basadas en sus puntos de interrupción, o seja, se una configuración para las 4 quebras de diseño, todas sus páginas con 4 adaptaciones de diseño, por Esto es muy importante pensar en contenedores y no en posiciones absolutas, de esta forma cada adaptación de diseño no encaixará ningún punto de interrupción entre sus dimensiones predeterminadas conforme a la imagen siguiente:</p>
+        </div>
+        <div class="card">
+            <h2>tarjeta2</h2>
+            <p>Cada punto de interrupción en la tela se adaptará al nuevo formato de diseño de forma instantánea, sin responsividad ni fluidez, la idea del diseño adaptativo es a troca sin movimiento.</p>
+
+            <p>Pensando no punto positivo es fácil trabajar con plantillas de página teniendo en cuenta que los contenedores siempre serán alterados conforme a sus puntos de interrupción predeterminados, caso o Design System existe regras puntos de interrupción iguales o Bootstrap faz melhor ainda.</p>
+        </div>
+        <div class="card">
+            <div class="container">
+                <h2>Otros Layout</h2>
+                <ul>
+                    <li><a href="simple.html">Layout Estatico</a></li>
+                    <li><a href="liquido.html">Layout Líquido</a></li>
+                    <li><a href="responsivo.html">Layout Responsivo</a></li>
+                    <li><a href="#">Layout Adaptativo</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Adaptative Modern Layout</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Proyectos y Tareas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+            text-align: center;
+        }
+
+        #main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        #main h1 {
+            text-align: center;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-list li {
+            background: #e4e4e4;
+            margin: 10px 0;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .project-list li:hover {
+            background: #f4f4f4;
+            border-left: #77aaff 5px solid;
+        }
+        .project-list a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="branding">
+            <h1>Mis Proyectos y Tareas</h1>
+        </div>
+    </header>
+    <div id="main" class="container">
+        <h1>Lista de Proyectos y Tareas</h1>
+        <ul class="project-list">
+            <li><a href="tarea_1/simple.html">Tarea 1: Tipos de Layout</a></li>
+            <li><a href="proyecto2/index.html">Tarea 2: Aplicación Web Interactiva</a></li>
+        </ul>
+    </div>
+</body>
+</html>

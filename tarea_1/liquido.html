@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Layout Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            height: calc(100vh - 240px);
+        }
+        article {
+            flex: 1 1 60%;
+            padding: 1em;
+        }
+        aside {
+            flex: 1 1 5%;
+            padding: 1em;
+            background-color: #f4f4f4;
+        }
+        @media (max-width: 600px) {
+            article, aside {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fluido (Fluido / Líquido)</h1>
+    </header>
+    <nav>
+        <a href="#" style="color: white; margin: 0 1em;">Home</a>
+        <a href="#" style="color: white; margin: 0 1em;">About</a>
+        <a href="#" style="color: white; margin: 0 1em;">Contact</a>
+    </nav>
+    <main>
+        <article>
+            <h2>Concepto</h2>
+            <p>Con el diseño fluido o líquido, como el nombre que tengo, ele se comporta de acuerdo con el movimiento del elemento pai que es el navegador, usted especifica sus tamaños no en píxeles, pero en porcentaje, o seja, si el tamaño de la tela cambia, la proporción de los elementos permanecerá igual, por eso los elementos se adaptan internamente.</p>
+            <p>Una desventaja de este diseño es que en telas menores como columnas pueden ficar muchas estreitas a punto de no poder comprender sus contenidos, imagine un texto extenso en una columna de 50 píxeles de mayor o menor. También vale la pena para elementos como imágenes y vídeos que deben permanecer en un lugar fijo, pero ningún tipo de diseño es adaptable con una gran cantidad de posibilidades para quebrar la experiencia, ese diseño en mí es muy problemático.</p>
+            <p>Este tipo de diseño es vantajoso en comparación con el fijo (anterior), hoy en día es casi imposible proyectar interfaces 100% fluidas, ambos escenarios estáticos y fluidos casi no se usan hoy en día.</p>
+            <div class="container">
+                <h2>Otros Layout</h2>
+                <ul>
+                    <li><a href="simple.html">Layout Estatico</a></li>
+                    <li><a href="#">Layout Líquido</a></li>
+                    <li><a href="responsivo.html">Layout Responsivo</a></li>
+                    <li><a href="adaptativo.html">Layout Adaptativo</a></li>
+                </ul>
+            </div>
+        </article>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Indice de la pagina</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy;Liquid Layout </p>
+    </footer>
+</body>
+</html></html>
